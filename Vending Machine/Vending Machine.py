@@ -21,7 +21,7 @@ def lays():
         if amount<A1["item_price"]:
             while amount<A1["item_price"]:
                 print ("\nAdd AED", A1["item_price"]-amount, " more to buy an item Lays")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
                     
@@ -47,7 +47,7 @@ def cheetos():
         if amount<A2["item_price"]:
             while amount<A2["item_price"]:
                 print ("\nAdd AED", A2["item_price"]-amount, "more to buy an item Cheetos")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -73,7 +73,7 @@ def pringles():
         if amount<A3["item_price"]:
             while amount<A3["item_price"]:
                 print ("\nAdd AED", A3["item_price"]-amount, "more to buy an item Pringles")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -99,7 +99,7 @@ def good_day():
         if amount<B1["item_price"]:
             while amount<B1["item_price"]:
                 print ("\nAdd AED", B1["item_price"]-amount, "more to buy an item Good Day")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -125,7 +125,7 @@ def oreo():
         if amount<B2["item_price"]:
             while amount<B2["item_price"]:
                 print ("\nAdd AED", B2["item_price"]-amount, "more to buy an item Oreo")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -151,7 +151,7 @@ def milk_bikis():
         if amount<B3["item_price"]:
             while amount<B3["item_price"]:
                 print ("\nAdd AED", B3["item_price"]-amount, "more to buy an item Milk Bikis")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -177,7 +177,7 @@ def galaxy():
         if amount<C1["item_price"]:
             while amount<C1["item_price"]:
                 print ("\nAdd AED", C1["item_price"]-amount, "more to buy an item Galaxy")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -203,7 +203,7 @@ def twix():
         if amount<C2["item_price"]:
             while amount<C2["item_price"]:
                 print ("\nAdd AED", C2["item_price"]-amount, "more to buy an item Twix")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -229,7 +229,7 @@ def bounty():
         if amount<C3["item_price"]:
             while amount<C3["item_price"]:
                 print ("\nAdd AED", C3["item_price"]-amount, "more to buy an item Bounty")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -255,7 +255,7 @@ def coffee():
         if amount<D1["item_price"]:
             while amount<D1["item_price"]:
                 print ("\nAdd AED", D1["item_price"]-amount, "more to buy an item Coffee")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -263,7 +263,7 @@ def coffee():
                     amount+=add
 
         if amount>=D1["item_price"]:
-            print ("\nOne "+D1["item_name"] +" packet has been dispensed.")
+            print ("\nOne cup of Hot "+D1["item_name"] +" has been dispensed.")
             print (D1["item_name"],"go best with",B3["item_name"])
             amount-=D1["item_price"]
             D1["item_stock"]-=1
@@ -281,7 +281,7 @@ def tea():
         if amount<D2["item_price"]:
             while amount<D2["item_price"]:
                 print ("\nAdd AED", D2["item_price"]-amount, "more to buy an item Tea")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -289,7 +289,7 @@ def tea():
                     amount+=add
 
         if amount>=D2["item_price"]:
-            print ("\nOne "+D2["item_name"] +" packet has been dispensed.")
+            print ("\nOne cup of Hot "+D2["item_name"] +" has been dispensed.")
             print (D2["item_name"],"go best with",B1["item_name"])
             amount-=D2["item_price"]
             D2["item_stock"]-=1
@@ -307,7 +307,7 @@ def milk():
         if amount<D3["item_price"]:
             while amount<D3["item_price"]:
                 print ("\nAdd AED", D3["item_price"]-amount, "more to buy an item Milk")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -315,7 +315,7 @@ def milk():
                     amount+=add
 
         if amount>=D3["item_price"]:
-            print ("\nOne "+D3["item_name"] +" packet has been dispensed.")
+            print ("\nOne cup of Hot "+D3["item_name"] +" has been dispensed.")
             print (D3["item_name"],"go best with",B2["item_name"])
             amount-=D3["item_price"]
             D3["item_stock"]-=1
@@ -333,7 +333,7 @@ def fanta():
         if amount<E1["item_price"]:
             while amount<E1["item_price"]:
                 print ("\nAdd AED", E1["item_price"]-amount, "more to buy an item Fanta")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -359,7 +359,7 @@ def pepsi():
         if amount<E2["item_price"]:
             while amount<E2["item_price"]:
                 print ("\nAdd AED", E2["item_price"]-amount, "more to buy an item Pepsi")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -385,7 +385,7 @@ def water():
         if amount<E3["item_price"]:
             while amount<E3["item_price"]:
                 print ("\nAdd AED", E3["item_price"]-amount, "more to buy an item Water bottle")
-                add=float(input("insert the amount or click '0' to quit: "))
+                add=float(input("insert the amount or click '0' to cancel the order: "))
                 if add==0:
                     break
 
@@ -465,49 +465,49 @@ while True:
         code=input("\nEnter the code of the item you would like to purchase: ")
         if code.upper()=="A1":
             lays()
-            choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+            choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="A2":
             cheetos()
-            choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+            choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="A3":
             pringles()
-            choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+            choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="B1":
             good_day()
-            choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+            choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="B2":
             oreo()
-            choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+            choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="B3":
            milk_bikis()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="C1":
            galaxy()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="C2":
            twix()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="C3":
            bounty()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="D1":
            coffee()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="D2":
            tea()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="D3":
            milk()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="E1":
            fanta()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="E2":
            pepsi()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="E3":
            water()
-           choice=input("Would you like to continue? Type any key to continue or 0 to quit: ")
+           choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")
         elif code.upper()=="0":
            print ("\nTake your change AED",amount)
            print ("""\n▀█▀ █░█ ▄▀█ █▄░█ █▄▀   █▄█ █▀█ █░█   █▀▀ █▀█ █▀█   █░█ █ █▀ █ ▀█▀ █ █▄░█ █▀▀

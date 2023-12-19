@@ -160,7 +160,7 @@ def milk_bikis():
 
         if amount>=B3["item_price"]:
             print ("\nOne "+B3["item_name"] +" packet has been dispensed.")
-            print (B2["item_name"],"Biscuit go best with",D1["item_name"])
+            print (B3["item_name"],"Biscuit go best with",D1["item_name"])
             amount-=B3["item_price"]
             B3["item_stock"]-=1
 

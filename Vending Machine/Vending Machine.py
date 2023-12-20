@@ -596,7 +596,7 @@ while True:
         else:
            print ("Invalid Code")  #prints "invalid code" if user enters wrong input
 
-        if choice=="0":   #if choice= is '0' 
+        if choice=="0":   #if choice is '0' 
            print ("\nTake your change AED", amount)   #Tells user to take their change and displays thank you message
            print ("""\n▀█▀ █░█ ▄▀█ █▄░█ █▄▀   █▄█ █▀█ █░█   █▀▀ █▀█ █▀█   █░█ █ █▀ █ ▀█▀ █ █▄░█ █▀▀
 ░█░ █▀█ █▀█ █░▀█ █░█   ░█░ █▄█ █▄█   █▀░ █▄█ █▀▄   ▀▄▀ █ ▄█ █ ░█░ █ █░▀█ █▄█""")

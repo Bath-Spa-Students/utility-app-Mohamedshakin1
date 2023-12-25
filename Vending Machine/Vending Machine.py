@@ -1,4 +1,4 @@
-#Creating the dictionary of each items with item name, item code, item price and item stock.
+#Creating the dictionary for each items with item name, item code, item price and item stock.
 A1={"item_name":"Lays","item_code":"A1","item_price":3,"item_stock":1}
 A2={"item_name":"Cheetos","item_code":"A2","item_price":4.50,"item_stock":5}
 A3={"item_name":"Pringles","item_code":"A3","item_price":5.50,"item_stock":4}
@@ -35,8 +35,8 @@ def lays():
         if amount>=A1["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne ", A1["item_name"] ," packet has been dispensed.")  #Tells the user that the item has been dispensed
             print (A1["item_name"],"Chips go best with",E1["item_name"])    #Suggests user to buy another item
-            amount-=A1["item_price"]   #Subtracts the amount to item price
-            A1["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=A1["item_price"]   #The item price is deducted from the amount
+            A1["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -66,8 +66,8 @@ def cheetos():
         if amount>=A2["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+A2["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (A2["item_name"],"Chips go best with",E2["item_name"])    #Suggests user to buy another item
-            amount-=A2["item_price"]   #Subtracts the amount to item price
-            A2["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=A2["item_price"]   #The item price is deducted from the amount
+            A2["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -97,8 +97,8 @@ def pringles():
         if amount>=A3["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+A3["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (A3["item_name"],"Chips go best with",E1["item_name"])    #Suggests user to buy another item
-            amount-=A3["item_price"]   #Subtracts the amount to item price
-            A3["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=A3["item_price"]   #The item price is deducted from the amount
+            A3["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -128,8 +128,8 @@ def good_day():
         if amount>=B1["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+B1["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (B1["item_name"],"Biscuit go best with",D2["item_name"])  #Suggests user to buy another item
-            amount-=B1["item_price"]   #Subtracts the amount to item price
-            B1["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=B1["item_price"]   #The item price is deducted from the amount
+            B1["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -159,8 +159,8 @@ def oreo():
         if amount>=B2["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+B2["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (B2["item_name"],"Biscuit go best with",D3["item_name"])  #Suggests user to buy another item
-            amount-=B2["item_price"]   #Subtracts the amount to item price
-            B2["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=B2["item_price"]   #The item price is deducted from the amount
+            B2["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -190,8 +190,8 @@ def milk_bikis():
         if amount>=B3["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+B3["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (B3["item_name"],"Biscuit go best with",D1["item_name"])  #Suggests user to buy another item
-            amount-=B3["item_price"]   #Subtracts the amount to item price
-            B3["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=B3["item_price"]   #The item price is deducted from the amount
+            B3["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -221,8 +221,8 @@ def galaxy():
         if amount>=C1["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+C1["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (C1["item_name"],"Chocolate go best with",D1["item_name"]) #Suggests user to buy another item
-            amount-=C1["item_price"]   #Subtracts the amount to item price
-            C1["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=C1["item_price"]   #The item price is deducted from the amount
+            C1["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -252,8 +252,8 @@ def twix():
         if amount>=C2["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+C2["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (C2["item_name"],"Chocolate go best with",D2["item_name"]) #Suggests user to buy another item
-            amount-=C2["item_price"]   #Subtracts the amount to item price
-            C2["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=C2["item_price"]   #The item price is deducted from the amount
+            C2["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -283,8 +283,8 @@ def bounty():
         if amount>=C3["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+C3["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (C3["item_name"],"Chocolate go best with",D1["item_name"]) #Suggests user to buy another item
-            amount-=C3["item_price"]   #Subtracts the amount to item price
-            C3["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=C3["item_price"]   #The item price is deducted from the amount
+            C3["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -314,8 +314,8 @@ def coffee():
         if amount>=D1["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne cup of Hot "+D1["item_name"] +" has been dispensed.")  #Tells the user that the item has been dispensed
             print (D1["item_name"],"go best with",B3["item_name"]) #Suggests user to buy another item
-            amount-=D1["item_price"]   #Subtracts the amount to item price
-            D1["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=D1["item_price"]   #The item price is deducted from the amount
+            D1["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -345,8 +345,8 @@ def tea():
         if amount>=D2["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne cup of Hot "+D2["item_name"] +" has been dispensed.")  #Tells the user that the item has been dispensed
             print (D2["item_name"],"go best with",B1["item_name"]) #Suggests user to buy another item
-            amount-=D2["item_price"]   #Subtracts the amount to item price
-            D2["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=D2["item_price"]   #The item price is deducted from the amount
+            D2["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -376,8 +376,8 @@ def milk():
         if amount>=D3["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne cup of Hot "+D3["item_name"] +" has been dispensed.")  #Tells the user that the item has been dispensed
             print (D3["item_name"],"go best with",B2["item_name"]) #Suggests user to buy another item
-            amount-=D3["item_price"]   #Subtracts the amount to item price
-            D3["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=D3["item_price"]   #The item price is deducted from the amount
+            D3["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -407,8 +407,8 @@ def fanta():
         if amount>=E1["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+E1["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (E1["item_name"],"go best with",A1["item_name"]) #Suggests user to buy another item
-            amount-=E1["item_price"]   #Subtracts the amount to item price
-            E1["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=E1["item_price"]   #The item price is deducted from the amount
+            E1["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -437,8 +437,8 @@ def pepsi():
         if amount>=E2["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+E2["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
             print (E2["item_name"],"go best with",A2["item_name"]) #Suggests user to buy another item
-            amount-=E2["item_price"]   #Subtracts the amount to item price
-            E2["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=E2["item_price"]   #The item price is deducted from the amount
+            E2["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -467,8 +467,8 @@ def water():
 
         if amount>=E3["item_price"]:    #if amount is greater or equal to item price
             print ("\nOne "+E3["item_name"] +" packet has been dispensed.")   #Tells the user that the item has been dispensed
-            amount-=E3["item_price"]   #Subtracts the amount to item price
-            E3["item_stock"]-=1   #Subtracts 1 item stock to original item stock
+            amount-=E3["item_price"]   #The item price is deducted from the amount
+            E3["item_stock"]-=1   # 1 item stock is deducted from the original item stock
 
     #If stock is not available
     else:
@@ -533,7 +533,7 @@ while True:
     try:
         amount=float(input("\nInsert coins or banknotes (in AED only): "))
     except ValueError:
-        print ("Invalid amount")  #if error occurs, it displays invalid amount
+        print ("Invalid amount")  #if error occurs, it displays 'invalid amount'
         continue  #it will continue the loop
 
     choice="y"

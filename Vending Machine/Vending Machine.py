@@ -541,7 +541,7 @@ while True:
         menu()  #Calling menu() function
         print ("\nYour balance is AED", amount) #Display the user's balance
         code=input("\nEnter the code of the item you would like to purchase: ")
-        #The upper() function is used to convert all the letters into capital letters, hence python is a case-sensitive language
+        #The upper() function is used to convert all the letters into capital letters, as python is a case-sensitive language
         if code.upper()=="A1":
             lays()    #if input code is 'A1' then it will call lays() function
             choice=input("Would you like to continue? Type any key to continue or '0' to quit: ")  #if user enters any key other than 0, it will continue the loop or else it breaks the loop

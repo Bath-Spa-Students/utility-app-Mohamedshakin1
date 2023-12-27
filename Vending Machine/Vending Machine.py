@@ -519,7 +519,7 @@ def menu():
     print ("| Item Name: " , E3["item_name"] , "\t|" , "Stock: " , E3["item_stock"] , "\t|", "Price: AED" , E3["item_price"], " \t|", "Code: ", E3["item_code"], " |")
     print ("|                                                                            |")
     print ("+----------------------------------------------------------------------------+")
-    print ("|                         Click 0 to quit                                    |")
+    print ("|                           Code '0' to quit                                 |")
     print ("+----------------------------------------------------------------------------+")
 
 #Displays welcoming message
